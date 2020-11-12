@@ -1,0 +1,33 @@
+.main {
+  .addBtn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid rgba(104, 48, 27, 0.685);
+    padding: 3px;
+    background-color: transparent;
+    outline: none;
+  }
+  .fa-pen-fancy {
+    color: brown;
+    font-size: 22px;
+  }
+
+  .addBtn:hover {
+    border: white;
+    color: white;
+    background-color: rgba(104, 48, 27, 0.685);
+
+    .fa-pen-fancy {
+      color: white;
+    }
+  }
+
+  & {
+    outline: none;
+    width: fit-content;
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+  }
+}

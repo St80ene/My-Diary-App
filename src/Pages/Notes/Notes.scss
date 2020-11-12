@@ -1,0 +1,94 @@
+$box-shadow: 0px 1px 18px 0px rgba(136, 63, 36, 0.88);
+.note {
+  height: 100vh;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  width: 100%;
+
+  &__noteBook {
+    width: 80%;
+    max-width: 500px;
+    margin: 1rem auto;
+  }
+
+  .box {
+    width: 100%;
+    outline: none;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    padding: 12px;
+    color: gray;
+    border: 1px solid rgba(136, 63, 36, 0.363);
+  }
+
+  .textArea {
+    resize: none;
+    min-height: 300px;
+  }
+
+  .fa-angle-double-left {
+    font-size: 27px;
+    color: rgba(136, 63, 36, 0.884);
+    margin: 2%;
+    padding: 10px;
+  }
+
+  .back-icon {
+    padding-top: 3rem;
+    width: 100%;
+    display: flex;
+  }
+
+  .back {
+    padding-bottom: 2px;
+    color: rgba(136, 63, 36, 0.884);
+  }
+
+  .fa-angle-double-left:hover {
+    color: rgba(136, 63, 36, 0.363);
+  }
+
+  .savebtn {
+    color: white;
+    background-color: rgba(136, 63, 36, 0.884);
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(136, 63, 36, 0.363);
+    outline: none;
+    margin-left: 67%;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .savebtn:hover {
+    color: rgba(136, 63, 36, 0.884);
+    background-color: white;
+    box-shadow: $box-shadow;
+  }
+
+  .box:focus {
+    outline: none;
+    color: rgba(136, 63, 36, 0.884);
+    box-shadow: $box-shadow;
+    border: none;
+  }
+
+  @media (max-width: 320px) {
+    .savebtn {
+      margin-left: 60%;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    &__noteBook {
+      width: 50%;
+      max-width: 750px;
+    }
+
+    .savebtn {
+      margin-left: 74%;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.container {
+  width: 47rem;
+  border: 1px solid rgba(136, 63, 36, 0.363);
+  border-radius: 4px;
+  margin: 3rem auto;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.432);
+
+  h4,
+  p {
+    padding: 11px;
+    margin: auto;
+  }
+
+  hr {
+    width: 90%;
+    border: 0.1px solid rgba(128, 128, 128, 0.205);
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .thoughts {
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 1.2s ease;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 18rem;
+    margin: 2rem auto;
+    // flex-grow: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 18rem;
+    margin: 2rem auto;
+  }
+}
